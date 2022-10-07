@@ -58,4 +58,4 @@ localhost:3100
 
 ## 8 Ending notes
 
-There is much more (like analysis and etc) but that's all we really need for now :)
+There is much more (like analysis, integration with ALB for defining traffic without considering number of pods) but that's all we really need for now :)
