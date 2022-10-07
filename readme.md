@@ -19,8 +19,12 @@ k create ns rollouts-demo
 k -n rollouts-demo apply -f https://raw.githubusercontent.com/argoproj/argo-rollouts/master/docs/getting-started/basic/rollout.yaml
 
 k -n rollouts-demo apply -f https://raw.githubusercontent.com/argoproj/argo-rollouts/master/docs/getting-started/basic/service.yaml
+
 ```
-## 3 Monitor
+
+Show specs and explain compatibility with `Deployment` resource
+
+## 3 CLI Monitor
 
 ```
 k argo rollouts -n rollouts-demo get rollout rollouts-demo --watch
@@ -60,7 +64,7 @@ localhost:3100
 
 ```
 k delete ns argo-rollouts rollouts-demo  
-k delete crd argocdextensions.argoproj.io appprojects.argoproj.io applications.argoproj.io applicationsets.argoproj.io
+k delete crd rollouts.argoproj.io analysisruns.argoproj.io analysistemplates.argoproj.io clusteranalysistemplates.argoproj.io experiments.argoproj.io
 ```
 
 ## 8 Ending notes
