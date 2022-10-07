@@ -23,7 +23,7 @@ k -n rollouts-demo apply -f https://raw.githubusercontent.com/argoproj/argo-roll
 ## 3 Monitor
 
 ```
-k argo rollouts get rollout rollouts-demo --watch
+k argo rollouts -n rollouts-demo get rollout rollouts-demo --watch
 ```
 
 ## 4 Update
