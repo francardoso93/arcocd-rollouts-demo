@@ -56,6 +56,14 @@ k argo rollouts -n rollouts-demo dashboard
 
 localhost:3100
 
+# 8 Clean Up
+
+```
+k delete ns argo-rollouts rollouts-demo  
+k delete crd argocdextensions.argoproj.io appprojects.argoproj.io applications.argoproj.io applicationsets.argoproj.io
+```
+
 ## 8 Ending notes
 
 There is much more (like analysis, integration with ALB for defining traffic without considering number of pods) but that's all we really need for now :)
+
