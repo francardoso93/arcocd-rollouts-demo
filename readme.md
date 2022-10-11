@@ -40,7 +40,7 @@ k argo rollouts -n rollouts-demo set image rollouts-demo \
 ## 5 Abort
 
 ```
-k -n rollouts-demo argo rollouts abort rollouts-demo
+k argo rollouts -n rollouts-demo abort rollouts-demo
 ```
 
 ## 6 Promote
